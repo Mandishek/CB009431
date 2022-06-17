@@ -1,0 +1,237 @@
+/*--------- header -------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif ;
+}
+
+.header{
+    min-height:70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(179, 102, 214, 0.7),rgba(118, 188, 221, 0.7)),url(../images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+
+    width: 90px;
+}
+.navigation-links{
+    flex:1;
+    text-align: right;
+}
+.navigation-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 9px 13px;
+    position: relative;
+}
+.navigation-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;   
+}
+.navigation-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    display:block;
+    margin:auto;
+    transition:1s;
+}
+.navigation-links ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text h1{
+    font-size: 52px;
+}
+.text p{
+    margin: 10px 0 40px;
+    font-size:14px;
+}
+@media(max-width:700px){
+    .text h1{
+        font-size:20px;
+    }
+    .navigation-links ul li{
+        display: block;
+    }
+    .navigation-links{
+        position: absolute;
+        background: #1fdfaf;
+        height: 100vh;
+        width:200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        
+    }
+    .navigation-links ul{
+        padding: 30px;
+
+    }
+}
+/*--------- header -------*/
+.purchase{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600 ;
+}
+p{
+    color: rgb(59, 33, 33);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+.purchase-row{
+    flex-basis: 31%;
+    background: rgb(243, 202, 90);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 00.5s;
+}
+.purchase-row img{
+    width: 100%;
+    height: auto;
+}
+.purchase{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../images/puechase.jpg);
+    background-position:center;
+    
+    display: flex;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../images/contactbg.jpg);
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-top: 30px;
+    position: relative;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 1s;
+}
+button{
+    padding: 10px;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px soild #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+input:focus~textarea,
+input:valid~textarea
+{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 45%;
+}
+/*--------- footer -------*/
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+ }
+ .Mfooter{
+     display: flex;
+ }
+ .Mfooter .box{
+     flex-basis: 100%;
+     padding: 10px 20px;
+     
+ }
+ .box h3{
+     font-size: 2rem;
+     font-weight: bold;
+     text-transform: capitalize;
+ }
+ .box.content{
+     margin: 20px 0 0 0;
+     text-align: justify;
+ }
+ .content p{
+    color: white;
+ }
+ .content.social{
+     margin: 20px 0 0 0;
+    }
+ /*--------- footer -------*/
